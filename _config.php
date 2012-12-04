@@ -1,0 +1,5 @@
+<?php
+
+/**
+ * some configy thingy
+ */

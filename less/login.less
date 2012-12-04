@@ -1,0 +1,86 @@
+// CSS RESET
+@import '_reset';
+
+// LOGIN VARIABLES AND MIXINS
+@sec-bg: #e6eaed;
+
+@sec-box-header-light: #002e4f;
+@sec-box-header-dark: #001220;
+@sec-box-header-border: #728d9e;
+
+@sec-box-bg-light: #b0bec7;
+@sec-box-bg-dark: #90a5b3;
+
+@sec-black: #000;
+@sec-grey: #444;
+@sec-white: #fff;
+
+@sec-action-primary-light: #93BE42;
+@sec-action-primary-mid: #1F9433;
+@sec-action-primary-dark: #166A24;
+
+@sec-message-bad: #B94A48;
+@sec-message-bad-bg: #F2DEDE;
+@sec-message-bad-border: #EED3D7;
+
+// ROUNDED CORNERS
+.rounded(@radius: 10px) {
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+	border-radius: @radius;
+}
+
+// SIMPLE GRADIENTS FOR BUTTONS
+.gradient(@colour-start, @colour-finish) {	
+	background: @colour-finish; // FOR NON-GRADIENTS
+	background: -webkit-linear-gradient(top, @colour-start 0%, @colour-finish 100%); // MODERN WEBKITS
+	background: linear-gradient(to bottom, @colour-start 0%, @colour-finish 100%); // W3C
+}
+
+// GRADIENT FOR MAIN AREA
+.gradient-box(@colour-start, @colour-finish) {	
+	background: @colour-start; // FOR NON-GRADIENTS
+	background: -webkit-linear-gradient(top, @colour-start 0%, @colour-start 60%, @colour-finish 100%); // MODERN WEBKITS
+	background: linear-gradient(to bottom, @colour-start 0%, @colour-start 60%, @colour-finish 100%); // W3C
+}
+
+// WEBSITE
+// ----------------------------------------------------------------------------------
+
+body {
+	background: @sec-bg;
+	font: 62.5% arial,sans-serif;
+}
+
+// FORM
+// --------------------------------------------------------------------------------
+
+#top {
+	width: 580px;
+	margin: 50px auto 0;
+	.gradient-box(@sec-box-bg-light, @sec-box-bg-dark);
+}
+
+.header {
+	height: 40px;
+	font-weight: bold;
+	font-size: 140%; line-height: 40px;
+	color: @sec-white;
+	border-bottom: 1px solid #728d9e;
+	.gradient(@sec-box-header-light, @sec-box-header-dark);
+	// SHADOW
+}
+
+form {
+	padding: 20px;
+}
+
+
+.message {
+	font-size: 100%; font-weight: bold;
+	margin: 0 0 1em; padding: 10px;
+	background: @sec-message-bad-bg;
+	color: @sec-message-bad;
+	border: 1px solid @sec-message-bad-border;
+	.rounded(10px);
+}
