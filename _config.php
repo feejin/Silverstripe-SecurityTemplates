@@ -1,6 +1,5 @@
 <?php
 
 /**
- * CSS overrides for Bigfork branding in Silverstripe CMS
+ * some configy thingy
  */
-LeftAndMain::require_css('bigforkssbranding/css/bigforkssbranding.css');
