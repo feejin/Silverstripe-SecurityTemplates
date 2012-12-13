@@ -2,7 +2,7 @@
 
 Standalone templates for SilverStripe login and password reset pages, designed to mirror the design of the CMS.
 
-By Colin Richardson - [Bigfork Ltd](http://www.bigfork.co.uk/).
+By Colin Richardson & Loz Calver - [Bigfork Ltd](http://www.bigfork.co.uk/).
 
 ##Installation:##
 
