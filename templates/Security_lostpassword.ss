@@ -7,13 +7,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="description" content="<% if MetaDescription %>$MetaDescription<% else %>$Content.FirstParagraph<% end_if %>">
 	$MetaTags(false)
-	<% require themedCSS(login) %>
+	<link rel="stylesheet" href="SecurityTemplates/css/login.css" type="text/css" />
 	<link rel="shortcut icon" href="{$BaseURL}favicon.ico" />
 </head>
 <body class="$ClassName">
 
 <div id="top">
-	<header><h1>Password Reset</h1></header>
+	<header>
+		<h1>Password Reset<span><!-- for logo --></span></h1>
+	</header>
 	$Form
 </div>
 
