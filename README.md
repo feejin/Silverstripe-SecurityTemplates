@@ -6,7 +6,7 @@ By Colin Richardson & Loz Calver - [Bigfork Ltd](http://www.bigfork.co.uk/).
 
 ##Installation:##
 
-Download and unzip, rename folder to SecurityTemplates and drop it into your SilverStripe root directory, run http://yoursite.url/dev/build adn you're done.
+Download and unzip, rename folder to SecurityTemplates and drop it into your SilverStripe root directory, run http://yoursite.url/dev/build and you're done.
 
 ##Customising##
 
