@@ -144,6 +144,9 @@ form, .content {
 	&.password {
 		float: right;
 	}
+	&#NewPassword1 {
+		float: left;
+	}
 	&.checkbox {
 		clear: both;
 		width: 100%;
@@ -251,5 +254,21 @@ input {
 		&.text {
 			width: 100%;
 		}
+	}
+}
+
+/* ANCHORS */
+
+a {
+	&:link, &:visited {
+		color: @sec-black;
+		background: transparent;
+		text-decoration: underline;
+	}
+	&:hover, &:active {
+		color: @sec-black;
+		background: @sec-action-primary-light-on;
+		text-decoration: none;
+		transition: background 0.2s ease-in 0s;
 	}
 }
