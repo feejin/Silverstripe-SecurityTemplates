@@ -2,6 +2,8 @@
 
 Standalone templates for SilverStripe login and password reset pages, designed to mirror the design of the CMS.
 
+Version 3.0.x only, updates for 3.1 are in the pipeline.
+
 By Colin Richardson & Loz Calver - [Bigfork Ltd](http://www.bigfork.co.uk/).
 
 ##Installation:##

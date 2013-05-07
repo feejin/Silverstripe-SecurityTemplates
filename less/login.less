@@ -146,6 +146,7 @@ form, .content {
 	}
 	&#NewPassword1 {
 		float: left;
+		clear: left;
 	}
 	&.checkbox {
 		clear: both;
@@ -200,12 +201,6 @@ input {
 		margin: 10px 0 0;
 		text-align: right;
 	}
-	a
-	{
-		text-decoration: underline;
-		&:link, &:visited { color: @sec-grey; }
-		&:hover, &:active { color: @sec-black; }
-	}
 }
 
 .action {
@@ -257,18 +252,17 @@ input {
 	}
 }
 
+/* CHOOSE NEW PASSWORD */
+
+#ChangePasswordForm_ChangePasswordForm {
+	padding-top: 0;
+}
+
 /* ANCHORS */
 
-a {
-	&:link, &:visited {
-		color: @sec-black;
-		background: transparent;
-		text-decoration: underline;
-	}
-	&:hover, &:active {
-		color: @sec-black;
-		background: @sec-action-primary-light-on;
-		text-decoration: none;
-		transition: background 0.2s ease-in 0s;
-	}
+a
+{
+	text-decoration: underline;
+	&:link, &:visited { color: @sec-grey; }
+	&:hover, &:active { color: @sec-black; }
 }
