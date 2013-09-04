@@ -10,7 +10,7 @@ Download and unzip, rename folder to SecurityTemplates and drop it into your Sil
 
 ##Customising##
 
-* You can change colours with LESS variables in /less/login.less. Yeah!
-* Replace logo.png in /images/ with your own if you fancy it. Max size is 24 x 24.
+* You can change colours with SCSS variables in /less/login.scss. Yeah!
+* Replace logo.png in /images/ with your own if you wish. Max size is 24 x 24.
 * Replacing the logo will also change the admin logo, comment out the "LeftAndMain::require" part of _config.php if you don't want this to happen
 * Help link in the CMS now hidden through CSS, see above for reinstating
