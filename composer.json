@@ -1,0 +1,25 @@
+{
+	"name": "feejin/silverstripe-securitytemplates",
+	"description": "Custom security templates to mirror CMS",
+	"type": "silverstripe-module",
+	"homepage": "https://github.com/feejin/Silverstripe-SecurityTemplates",
+	"keywords": ["silverstripe", "security", "templates", "theme"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Colin Richardson",
+			"email": "colinrichardson@bigfork.co.uk"
+		},
+		{
+			"name": "Loz Calver",
+			"email": "lozcalver@bigfork.co.uk"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/feejin/Silverstripe-SecurityTemplates/issues"
+	},
+	"require": {
+		"silverstripe/cms": ">=3.0",
+		"silverstripe/framework": ">=3.0"
+	}
+}
