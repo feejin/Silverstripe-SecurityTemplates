@@ -7,7 +7,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="description" content="<% if MetaDescription %>$MetaDescription<% else %>$Content.FirstParagraph<% end_if %>">
 	$MetaTags(false)
-	<link rel="stylesheet" href="{$BaseURL}SecurityTemplates/css/login.css" type="text/css" />
+	<link rel="stylesheet" href="{$BaseURL}securitytemplates/css/login.css" type="text/css" />
 	<link rel="shortcut icon" href="{$BaseURL}favicon.ico" />
 </head>
 <body class="$ClassName">
