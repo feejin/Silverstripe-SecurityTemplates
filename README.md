@@ -4,9 +4,13 @@ Standalone templates for SilverStripe 3.x login and password reset pages, design
 
 By Colin Richardson & Loz Calver - [Bigfork Ltd](http://www.bigfork.co.uk/).
 
-##Installation:##
+##Composer Installation:##
 
-Download and unzip, rename folder to SecurityTemplates and drop it into your SilverStripe root directory, run http://yoursite.url/dev/build and you're done.
+Add this to your composer.json requirements: `"feejin/silverstripe-securitytemplates": "1.0.0"`
+
+##Manual Installation##
+
+Download and unzip, rename folder to securitytemplates and drop it into your SilverStripe root directory, run http://yoursite.url/dev/build and you're done.
 
 ##Customising##
 
