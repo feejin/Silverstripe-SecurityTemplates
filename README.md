@@ -6,7 +6,7 @@ By Colin Richardson & Loz Calver - [Bigfork Ltd](http://www.bigfork.co.uk/).
 
 ##Composer Installation:##
 
-Add this to your composer.json requirements: `"feejin/silverstripe-securitytemplates": "1.0.0"`
+Add this to your composer.json requirements: `"feejin/silverstripe-securitytemplates": "^1.0"`
 
 ##Manual Installation##
 
@@ -14,7 +14,6 @@ Download and unzip, rename folder to securitytemplates and drop it into your Sil
 
 ##Customising##
 
-* You can change colours with SCSS variables in /less/login.scss. Yeah!
+* You can change colours with SCSS variables in /scss/login.scss. 
 * Replace logo.png in /images/ with your own if you wish. Max size is 24 x 24.
 * Replacing the logo will also change the admin logo, comment out the "LeftAndMain::require" part of _config.php if you don't want this to happen
-* Help link in the CMS now hidden through CSS, see above for reinstating
