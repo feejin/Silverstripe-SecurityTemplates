@@ -14,7 +14,7 @@
 
 <div id="top">
 	<header>
-		<h1>Choose a New Password<span><!-- for logo --></span></h1>
+		<h1><%t Security.CHANGEPASSWORDHEADER "Choose a New Password" %><span><!-- for logo --></span></h1>
 	</header>
 	<% if $Content %>
 	<div class="content">
