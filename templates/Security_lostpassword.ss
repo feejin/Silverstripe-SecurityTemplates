@@ -14,7 +14,7 @@
 
 <div id="top">
 	<header>
-		<h1>Password Reset<span><!-- for logo --></span></h1>
+		<h1><%t Security.LOSTPASSWORDHEADER "Password Reset" %><span><!-- for logo --></span></h1>
 	</header>
 	$Form
 </div>
