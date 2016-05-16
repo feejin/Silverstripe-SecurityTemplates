@@ -144,7 +144,8 @@ form, .content {
 	&.password {
 		float: right;
 	}
-	&#NewPassword1 {
+	&#ChangePasswordForm_ChangePasswordForm_OldPassword_Holder,
+	&#ChangePasswordForm_ChangePasswordForm_NewPassword1_Holder {
 		float: left;
 		clear: left;
 	}
