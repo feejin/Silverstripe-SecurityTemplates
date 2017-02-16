@@ -19,7 +19,7 @@
 		"issues": "https://github.com/feejin/Silverstripe-SecurityTemplates/issues"
 	},
 	"require": {
-		"silverstripe/framework": "^4.0"
+		"silverstripe/framework": "^3.0"
 	},
 	"extra": {
 		"installer-name": "securitytemplates"
