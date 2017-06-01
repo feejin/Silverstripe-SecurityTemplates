@@ -7,4 +7,4 @@
  *
  * WTFPL
  * http://en.wikipedia.org/wiki/WTFPL
- */.cms-logo a{background-image:url('../images/logo.svg')}
+ */.cms-logo a{background-image:url('../images/logo.svg');background-size:24px 24px}
