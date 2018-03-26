@@ -1,7 +1,7 @@
 {
 	"name": "feejin/silverstripe-securitytemplates",
 	"description": "Custom security templates to mirror CMS",
-	"type": "silverstripe-module",
+	"type": "silverstripe-vendormodule",
 	"homepage": "https://github.com/feejin/Silverstripe-SecurityTemplates",
 	"keywords": ["silverstripe", "security", "templates", "theme"],
 	"license": "BSD-3-Clause",
@@ -19,9 +19,13 @@
 		"issues": "https://github.com/feejin/Silverstripe-SecurityTemplates/issues"
 	},
 	"require": {
-		"silverstripe/framework": "^4.0"
+		"silverstripe/framework": "^4.1"
 	},
 	"extra": {
-		"installer-name": "securitytemplates"
+		"installer-name": "securitytemplates",
+        "expose": [
+            "css",
+            "images"
+        ]
 	}
 }
