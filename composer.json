@@ -13,13 +13,20 @@
 		{
 			"name": "Loz Calver",
 			"email": "lozcalver@bigfork.co.uk"
-		}
+		},
+        {
+            "name": "Andrew Haine",
+            "email": "hello@andrewhaine.co.uk"
+        }
 	],
 	"support": {
 		"issues": "https://github.com/feejin/Silverstripe-SecurityTemplates/issues"
 	},
 	"require": {
-		"silverstripe/framework": "^4.1"
+		"silverstripe/framework": "^4.1",
+        "silverstripe/cms": "^4.1",
+        "silverstripe/admin": "^1.0",
+        "silverstripe/asset-admin": "^1.0"
 	},
 	"extra": {
 		"installer-name": "securitytemplates",
