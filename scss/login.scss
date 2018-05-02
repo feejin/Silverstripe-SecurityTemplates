@@ -10,122 +10,93 @@
  */
 
 /* CSS RESET */
-$import '_reset';
+@import 'reset';
 
-$sec-bg: #e6eaed;
+// Standard Colours
+$sec-black: #000;
+$sec-blue: #00558d;
+$sec-blue--dark: #3e536f;
+$sec-green: #008c00;
+$sec-green--dark: #006400;
+$sec-grey: #444;
+$sec-white: #fff;
+
+
+// Element-specific colours
+$sec-bg: #e4edf1;
+$sec-border-light: rgba(#f5f3f3, .4);
+$sec-input-bg: $sec-white;
+$sec-input-border: #bfcadb;
+
+// Feature-specific-colours
+$sec-shadow: rgba(#7d7d7d, .32);
 
 $sec-box-header-light: #002e4f;
 $sec-box-header-dark: #001220;
 $sec-box-header-border: #728d9e;
 $sec-box-header-divider: #13435e;
 
-$sec-box-bg-light: #b0bec7;
-$sec-box-bg-dark: #90a5b3;
-$sec-box-shadow: #636f76;
-
-$sec-black: #000;
-$sec-grey: #444;
-$sec-white: #fff;
-
-$sec-input-bg: #eaeaea;
-$sec-input-border: #b3b3b3;
-$sec-input-border-dark: #808080;
-$sec-input-border-mid: #9a9a9a;
-
-$sec-action-primary-light: #93BE42;
-$sec-action-primary-mid: #1F9433;
-$sec-action-primary-dark: #166A24;
+$sec-action-primary-light: #93be42;
+$sec-action-primary-mid: #1f9433;
+$sec-action-primary-dark: #166a24;
 
 $sec-action-primary-light-on: #a4ca3a;
 $sec-action-primary-mid-on: #23a93a;
 
-$sec-message-bad: #B94A48;
-$sec-message-bad-bg: #F2DEDE;
-$sec-message-bad-border: #EED3D7;
+$sec-message-bad: #b94a48;
+$sec-message-bad-bg: #f2dede;
+$sec-message-bad-border: #eed3d7;
 
 $sec-message-good: $sec-white;
 $sec-message-good-bg: $sec-action-primary-mid;
 $sec-message-good-border: $sec-action-primary-dark;
 
-// ROUNDED CORNERS
-@mixin rounded($radius: 10px) {
-	-moz-border-radius: $radius;
-	-webkit-border-radius: $radius;
-	border-radius: $radius;
-}
-
-// SIMPLE GRADIENTS FOR BUTTONS
-@mixin gradient($colour-start, $colour-finish) {
-	background: $colour-finish; // FOR NON-GRADIENTS
-	background: -webkit-linear-gradient(top, $colour-start 0%, $colour-finish 100%); // MODERN WEBKITS
-	background: linear-gradient(to bottom, $colour-start 0%, $colour-finish 100%); // W3C
-}
-
-// GRADIENT FOR MAIN AREA
-@mixin gradient-box($colour-start, $colour-finish) {
-	background: $colour-start; // FOR NON-GRADIENTS
-	background: -webkit-linear-gradient(top, $colour-start 0%, $colour-start 60%, $colour-finish 100%); // MODERN WEBKITS
-	background: linear-gradient(to bottom, $colour-start 0%, $colour-start 60%, $colour-finish 100%); // W3C
-}
-
-// GRADIENT FOR TEXT INPUTS
-@mixin gradient-input($colour-start, $colour-finish) {
-	background: $colour-finish; // FOR NON-GRADIENTS
-	background: -webkit-linear-gradient(top, $colour-start 0%, $colour-finish 10%, $colour-finish 100%); // MODERN WEBKITS
-	background: linear-gradient(to bottom, $colour-start 0%, $colour-finish 10%, $colour-finish 100%); // W3C
-}
-
-// BOX SHADOW
-@mixin shadow ($color, $x, $y, $blur, $spread) {
-  -moz-box-shadow:    $x $y $blur $spread $color;
-  -webkit-box-shadow: $x $y $blur $spread $color;
-  box-shadow:         $x $y $blur $spread $color;
-}
-
-// BOX SIZING
-@mixin border-box {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
 
 /* SILVERSTRIPE SECURITY TEMPLATES
 ---------------------------------------------------------------------------------- */
 
 body {
-	background: $sec-bg;
+    position: relative;
+    overflow: hidden;
+    width: 100vw; height: 100vh;
+	background-color: $sec-white;
+    background-position: 50% 50%;
+    background-size: cover;
 	font: 62.5% arial,sans-serif;
 }
 
 #top {
 	width: 540px;
-	margin: 50px auto 0;
-	@include gradient-box($sec-box-bg-light, $sec-box-bg-dark);
-	@include shadow ($sec-box-shadow, 0, 2px, 2px, 0);
+	margin: 80px auto 0;
 }
 
 header {
 	position: relative;
 	width: 490px; height: 40px;
 	padding: 0 0 0 50px;
+	color: $sec-white;
+	background: $sec-blue;
 	font-weight: bold;
 	font-size: 140%; line-height: 40px;
-	color: $sec-white;
-	border-bottom: 1px solid $sec-box-header-border;
-	@include gradient($sec-box-header-light, $sec-box-header-dark);
 
 	span {
-		position: absolute; left: 0; top: 8px;
+		position: absolute; top: 8px; left: 0;
 		display: block;
 		width: 40px; height: 24px;
-		border-right: 1px solid $sec-box-header-divider;
+		border-right: 1px solid $sec-border-light;
 		background: url('../images/logo.svg') no-repeat 50% 50%;
 	}
 }
 
-form, .content {
+form,
+.content {
 	padding: 20px;
+	background: $sec-bg;
 	font-size: 120%;
+
+    * {
+        box-sizing: border-box;
+    }
 }
 
 /* STYLES FOR THE DEFAULT FIELD DIVS THAT SILVERSTRIPE CREATES */
@@ -134,25 +105,27 @@ form, .content {
 	&.text {
 		float: left;
 		width: 240px;
-		margin: 0 0 10px 0;
+		margin: 0 0 10px;
 
 		label {
 			font-weight: bold;
-			text-shadow: 1px 1px 1px $sec-white;
 		}
 	}
+
 	&.password {
 		float: right;
 	}
+
 	&#ChangePasswordForm_ChangePasswordForm_OldPassword_Holder,
 	&#ChangePasswordForm_ChangePasswordForm_NewPassword1_Holder {
 		float: left;
 		clear: left;
 	}
+
 	&.checkbox {
 		clear: both;
 		width: 100%;
-		margin: 0 0 15px 0;
+		margin: 0 0 15px;
 	}
 }
 
@@ -161,7 +134,7 @@ form, .content {
 label {
 	display: inline-block;
 	margin: 0 0 2px 2px;
-	color: $sec-grey;
+	color: $sec-blue--dark;
 
 	&.right {
 		margin-left: 5px;
@@ -169,18 +142,15 @@ label {
 }
 
 input {
+    border-radius: 4px;
 	font-size: 100%;
-	@include border-box;
 
 	&.text {
 		width: 100%;
 		padding: 6px;
 		border: 1px solid $sec-input-border;
-		.gradient-input($sec-input-bg, $sec-white);
-		.rounded(5px);
 
 		&:focus {
-			border-color: $sec-input-border-dark $sec-input-border-mid $sec-input-border-mid $sec-input-border-mid;
 			transition: border 0.2s ease-in 0s;
 		}
 	}
@@ -206,46 +176,38 @@ input {
 
 .action {
 	float: left;
-
-	font-size: 100%;
 	margin: 5px 0; padding: 5px 15px;
+	border: 0;
+	border-radius: 4px;
 	color: $sec-white;
-	border-width: 1px; border-style: solid;
-	border-color: $sec-action-primary-mid $sec-action-primary-mid $sec-action-primary-dark $sec-action-primary-mid;
+	background: $sec-green;
+	font-size: 13px;
 	cursor: pointer;
-	@include gradient($sec-action-primary-light, $sec-action-primary-mid);
-	@include rounded(5px);
 
 	&:hover {
-		border-color: $sec-action-primary-dark;
-		.gradient($sec-action-primary-light-on, $sec-action-primary-mid-on);
-		.shadow($sec-input-border, 0, 0, 5px, 0)
+		background: $sec-green--dark;
 	}
 }
 
 /* CONFIRMATION MESSAGES */
 
 .message {
-	font-weight: bold;
 	margin: 0 0 1em; padding: 10px;
-	background: $sec-message-bad-bg;
-	color: $sec-message-bad;
 	border: 1px solid $sec-message-bad-border;
-	@include rounded(5px);
+	color: $sec-message-bad;
+	background: $sec-message-bad-bg;
+	font-weight: bold;
 
 	&.good {
-		background: $sec-message-good-bg;
-		color: $sec-message-good;
 		border: 1px solid $sec-message-good-border;
+		color: $sec-message-good;
+		background: $sec-message-good-bg;
 	}
 }
 
 /* LOST PASSWORD VARIANT */
 
 #MemberLoginForm_LostPasswordForm {
-	@include field {
-		width: 100%;
-	}
 	input {
 		&.text {
 			width: 100%;
@@ -263,6 +225,14 @@ input {
 
 a {
 	text-decoration: underline;
-	&:link, &:visited { color: $sec-grey; }
-	&:hover, &:active { color: $sec-black; }
+
+	&:link,
+	&:visited {
+		color: $sec-blue--dark;
+	}
+
+	&:hover,
+	&:active {
+		color: $sec-black;
+	}
 }
