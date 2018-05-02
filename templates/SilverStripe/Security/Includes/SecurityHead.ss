@@ -7,7 +7,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="description" content="<% if MetaDescription %>$MetaDescription<% else %>$Content.FirstParagraph<% end_if %>">
 	$MetaTags(false)
-	<link rel="stylesheet" href="{$BaseURL}resources/vendor/feejin/silverstripe-securitytemplates/css/login.css" type="text/css" />
+	<% require CSS('feejin/silverstripe-securitytemplates:css/login.css') %>
 	<link rel="shortcut icon" href="{$BaseURL}favicon.ico" />
 </head>
 <body class="$ClassName" <% if $SiteConfig.SecurityBackgroundImage %>style="background-image:url('{$SiteConfig.SecurityBackgroundImage.URL}')"<% end_if %>>
