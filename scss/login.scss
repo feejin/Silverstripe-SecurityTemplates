@@ -56,7 +56,12 @@ $sec-message-good-border: $sec-action-primary-dark;
 ---------------------------------------------------------------------------------- */
 
 body {
-	background: $sec-white;
+    position: relative;
+    overflow: hidden;
+    width: 100vw; height: 100vh;
+	background-color: $sec-white;
+    background-position: 50% 50%;
+    background-size: cover;
 	font: 62.5% arial,sans-serif;
 }
 

@@ -10,6 +10,6 @@
 	<link rel="stylesheet" href="{$BaseURL}resources/vendor/feejin/silverstripe-securitytemplates/css/login.css" type="text/css" />
 	<link rel="shortcut icon" href="{$BaseURL}favicon.ico" />
 </head>
-<body class="$ClassName">
+<body class="$ClassName" <% if $SiteConfig.SecurityBackgroundImage %>style="background-image:url('{$SiteConfig.SecurityBackgroundImage.URL}')"<% end_if %>>
 
 <!-- Security panel start -->
