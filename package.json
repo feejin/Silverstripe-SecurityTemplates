@@ -1,0 +1,27 @@
+{
+  "name": "securitytemplates",
+  "version": "1.0.0",
+  "description": "Standalone templates for SilverStripe 4.1+ login and password reset pages, designed to mirror the design of the CMS.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feejin/Silverstripe-SecurityTemplates.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feejin/Silverstripe-SecurityTemplates/issues"
+  },
+  "homepage": "https://github.com/feejin/Silverstripe-SecurityTemplates#readme",
+  "devDependencies": {
+    "css-mqpacker": "^6.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-scss-lint": "^0.6.1",
+    "gulp-watch": "^5.0.0",
+    "sort-css-media-queries": "^1.3.4"
+  }
+}

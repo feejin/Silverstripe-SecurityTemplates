@@ -1,0 +1,6 @@
+---
+name: securitytemplatesconfig
+---
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - Feejin\SecurityTemplates\Extensions\SiteSettingsExtension
