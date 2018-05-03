@@ -4,12 +4,11 @@
 	<header>
 		<h1><%t Security.CHANGEPASSWORDHEADER "Choose a New Password" %><span><!-- for logo --></span></h1>
 	</header>
-	<% if $Content %>
 	<div class="content">
 		$Content
+        <br />
+        $Form
 	</div>
-	<% end_if %>
-	$Form
 </div>
 
 <% include SilverStripe\Security\Includes\SecurityFooter %>

@@ -57,7 +57,6 @@ $sec-message-good-border: $sec-action-primary-dark;
 
 body {
     position: relative;
-    overflow: hidden;
     width: 100vw; height: 100vh;
 	background-color: $sec-white;
     background-position: 50% 50%;
@@ -67,7 +66,8 @@ body {
 
 #top {
 	width: 540px;
-	margin: 80px auto 0;
+	margin: 0 auto;
+    transform: translateY(80px);
 }
 
 header {
@@ -90,13 +90,16 @@ header {
 
 form,
 .content {
-	padding: 20px;
 	background: $sec-bg;
-	font-size: 120%;
 
     * {
         box-sizing: border-box;
     }
+}
+
+.content {
+    padding: 20px;
+    font-size: 120%;
 }
 
 /* STYLES FOR THE DEFAULT FIELD DIVS THAT SILVERSTRIPE CREATES */
@@ -121,6 +124,10 @@ form,
 		float: left;
 		clear: left;
 	}
+
+    &#LostPasswordForm_lostPasswordForm_Email_Holder {
+        width: 100% !important;
+    }
 
 	&.checkbox {
 		clear: both;
