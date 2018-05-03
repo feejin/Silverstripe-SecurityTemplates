@@ -4,7 +4,10 @@
 	<header>
 		<h1>{$SiteConfig.Title} Admin<span><!-- for logo --></span></h1>
 	</header>
-	$Form
+	<div class="content">
+        {$Content}
+        $Form
+    </div>
 </div>
 
 <% include SilverStripe\Security\Includes\SecurityFooter %>

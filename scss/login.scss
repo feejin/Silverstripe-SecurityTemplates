@@ -90,13 +90,16 @@ header {
 
 form,
 .content {
-	padding: 20px;
 	background: $sec-bg;
-	font-size: 120%;
 
     * {
         box-sizing: border-box;
     }
+}
+
+.content {
+    padding: 20px;
+    font-size: 120%;
 }
 
 /* STYLES FOR THE DEFAULT FIELD DIVS THAT SILVERSTRIPE CREATES */
@@ -121,6 +124,10 @@ form,
 		float: left;
 		clear: left;
 	}
+
+    &#LostPasswordForm_lostPasswordForm_Email_Holder {
+        width: 100% !important;
+    }
 
 	&.checkbox {
 		clear: both;
