@@ -20,11 +20,12 @@ $sec-green: #008c00;
 $sec-green--dark: #006400;
 $sec-grey: #444;
 $sec-white: #fff;
+$sec-off-white: #f7f8fa;
 
 
 // Element-specific colours
-$sec-bg: #e4edf1;
-$sec-border-light: rgba(#f5f3f3, .4);
+$sec-bg: #e9f0f4;
+$sec-border-light: #ced5e1;
 $sec-input-bg: $sec-white;
 $sec-input-border: #bfcadb;
 
@@ -58,7 +59,7 @@ $sec-message-good-border: $sec-action-primary-dark;
 body {
     position: relative;
     width: 100vw; height: 100vh;
-	background-color: $sec-white;
+	background-color: $sec-off-white;
     background-position: 50% 50%;
     background-size: cover;
 	font: 62.5% arial,sans-serif;
@@ -99,6 +100,8 @@ form,
 
 .content {
     padding: 20px;
+    border: solid 1px $sec-border-light;
+    border-top: 0;
     font-size: 120%;
 }
 
