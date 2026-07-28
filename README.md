@@ -1,5 +1,7 @@
 # SilverStripe Security Templates
 
+*This repo is abandoned, use at your own risk*
+
 Standalone templates for SilverStripe 4.1+ login and password reset pages, designed to mirror the design of the CMS.
 
 By Colin Richardson, Loz Calver & Andrew Haine - [Bigfork Ltd](http://www.bigfork.co.uk/).
